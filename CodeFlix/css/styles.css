@@ -1,0 +1,137 @@
+﻿body {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    width: 100%;
+    position: relative;
+}
+
+.codeflix-logo img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #333;
+    color: #fff;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.cartao-carrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 205px;
+    height: 270px;
+    margin: 10px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding-bottom: 30px;
+}
+
+.cartao-carrossel:hover {
+    transform: scale(1.1);
+}
+
+.cartao-carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo-exibicao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #1d1d1d;
+}
+
+.conteudo-banner {
+    max-width: 410px;
+    max-height: 540px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-texto {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.conteudo-texto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+h2.titulo-linguagem {
+    font-size: 14px;
+    max-width: 410px;
+    margin-top: 0.5rem;
+    color: #cacaca;
+}
+
+.conteudo-texto p {
+    margin-bottom: 10px;
+}
+
+.ferramentas-frameworks,
+.linguagens {
+    margin-left: 30px;
+    font-size: 14px;
+    color: #cacaca;
+}
+
+.conteudo-texto a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-voltar {
+    margin: 20px auto;
+    padding: 10px 500px;
+    font-size: 16px;
+    background-color: #2c2c2c;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+}
+
+.botao-voltar:hover {
+    background-color: #555555;
+}
